@@ -92,15 +92,17 @@ let course={
 //Types of Functions
 
 //
-function multiply(num1,num2){
-    const product= num1*num2;// undefined return type
-}
+// function multiply(num1,num2){
+//     const product= num1*num2;// undefined return type
+// }
 
-console.log(multiply(10,20));
+// console.log(multiply(10,20));
 
 
-function multiply(num1,num2){
-    return  num1*num2;// defined return type
-}
+// function multiply(num1,num2){
+//     return  num1*num2;// defined return type
+// }
 
-console.log(multiply(10,20));
+// console.log(multiply(10,20));
+
+
