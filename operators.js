@@ -97,6 +97,21 @@
 
 
 //Logical Operators WITH nON BOOLEAN VALUES
+//falsy values are false,0,empty string, null, undefined, NaN
+// javascript treats the values as truthy or falsy
+
+
+// let userChoosenColor='Red';
+// let defaultColor='Blue';
+
+// const currentWebsiteColor=userChoosenColor || defaultColor;
+// console.log(currentWebsiteColor);
 
 
 
+///Operator Precedence
+//javascript follows the operator precedence rule to evaluate the expression
+//this rules has precedence like multiplication and division has higher precedence than addition and subtraction
+
+ let x=10+5*2;
+ console.log(x);
