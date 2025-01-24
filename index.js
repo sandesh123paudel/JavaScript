@@ -111,14 +111,35 @@
 // console.log(randomNumber);
 
 
-let randomNumber;
-const myButton=document.getElementById('submit');
-const myLabel=document.getElementById('result')
-const min=1;
-const max=6;
+// let randomNumber;
+// const myButton=document.getElementById('submit');
+// const myLabel=document.getElementById('result')
+// const min=1;
+// const max=6;
 
-myButton.onclick=function()
-{
-   randomNumber=Math.floor(Math.random()*max+min);
-   myLabel.textContent='Generated Random Number is: '+ randomNumber;
+// myButton.onclick=function()
+// {
+//    randomNumber=Math.floor(Math.random()*max+min);
+//    myLabel.textContent='Generated Random Number is: '+ randomNumber;
+// }
+
+
+
+// let timr=11;
+
+// let greeting = timr <12 ? "Good morning" :" Good afternoon";
+
+// console.log(greeting);
+
+
+let day=1;
+
+switch(day){
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:
+        console.log("Monday");
+        break;
+        
 }
