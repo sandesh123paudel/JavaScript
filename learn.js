@@ -106,3 +106,19 @@ let course={
 // console.log(multiply(10,20));
 
 
+
+///Variable Scopes== where a varaible is recognized and accessible (local vs global)
+
+
+let x=3;//global variable
+
+function1();
+
+function function1(){
+    let x=2;
+    console.log(x);
+}
+
+function function2(){
+    console.log(x);
+}
