@@ -113,5 +113,19 @@
 //javascript follows the operator precedence rule to evaluate the expression
 //this rules has precedence like multiplication and division has higher precedence than addition and subtraction
 
- let x=10+5*2;
- console.log(x);
+//  let x=10+5*2;
+//  console.log(x);
+
+
+
+///Logical Operators
+
+
+const temp=-100;
+
+if(temp>0 && temp<=30){
+    console.log("The weather is good");
+}
+else{
+    console.log("The weather is bad");
+}
