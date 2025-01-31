@@ -47,11 +47,11 @@
 // object is a fundamental data type which is the  collection of key-value pairs
 // reference data type
 
-let course={
-    name:'JavaScript',
-    hours:40,
-    topics:['Data Types','Functions','Objects'],
-}
+// let course={
+//     name:'JavaScript',
+//     hours:40,
+//     topics:['Data Types','Functions','Objects'],
+// }
 
 // course.name='Python'; //Dot Notation
 
@@ -72,9 +72,23 @@ let course={
 // let productColors=['Red','Blue','Green'];//Array
 // //has same data type of object
 
-// productColors[0]=24;
+// // productColors[0]=24;
 
-// console.log(productColors.length);// indexing the array
+// // console.log(productColors.length);// indexing the array
+
+// for (let i=0;i<productColors.length;i++){
+//     console.log(productColors[i]);
+// }
+
+// //reverse order
+// for (let i=productColors.length-1;i>=0;i--){
+//     console.log(productColors[i]);
+// }
+
+// //New Method
+// for(let product of productColors){
+//     console.log(product);
+// }
  
 
 
@@ -110,15 +124,15 @@ let course={
 ///Variable Scopes== where a varaible is recognized and accessible (local vs global)
 
 
-let x=3;//global variable
+// let x=3;//global variable
 
-function1();
+// function1();
 
-function function1(){
-    let x=2;
-    console.log(x);
-}
+// function function1(){
+//     let x=2;
+//     console.log(x);
+// }
 
-function function2(){
-    console.log(x);
-}
+// function function2(){
+//     console.log(x);
+// }

@@ -121,11 +121,85 @@
 ///Logical Operators
 
 
-const temp=-100;
+// const temp=-100;
 
-if(temp>0 && temp<=30){
-    console.log("The weather is good");
+// if(temp>0 && temp<=30){
+//     console.log("The weather is good");
+// }
+// else{
+//     console.log("The weather is bad");
+// }
+
+
+
+///Spread Operators : " ... allows an iterable such an array or string to be expanded into separate elements(unpack the elements)"
+
+// let numbers=[1,2,3,4,5,6];
+
+// let maximum=Math.max(...numbers);
+
+// console.log(maximum);
+
+
+
+// let username="Sandesh Paudel";
+// let letters=[...username].join("-");
+// console.log(letters);
+
+
+// let fruits=["apple","orange","banana"];
+// let vegetables=["carrots","celery","potatoes"];
+// let newFruits=[...fruits,...vegetables,"eggs"];
+
+// console.log(newFruits);
+
+
+
+///Rest Parameters: opposite into spread
+                //(...rest) allow a function work with avariable number of arguments by bundling them in to an array
+
+
+
+// function openFridge(...foods){
+//     console.log(foods);
+// }
+
+// function getFood(...foods){
+//     return foods;
+// }
+
+// const food1="pizza";
+// const food2="hamburger";
+// const food3="hotdog";
+
+
+// // openFridge(food2,food1,food3)
+
+// const foods=getFood("Pizza","Hamburger","HotDog");
+// console.log(foods);
+
+
+//Example:2
+// function sum(...numbers){
+//     let result=0;
+
+//     for(let number of numbers){
+//         result+=number;
+//     }
+//     return result;
+// }
+
+
+// const total=sum(1,2,3,4,5);
+
+// console.log(total);
+
+
+//Example 3
+
+function combineStrings(...strings){
+return strings.join(" ");
 }
-else{
-    console.log("The weather is bad");
-}
+
+const fullName=combineStrings("Mr","Sandesh","Paudel")
+console.log(fullName);
