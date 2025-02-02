@@ -61,15 +61,40 @@
 
 //              array.forEach(callback)
 
-let numbers=[1,2,3,4,5];
+// let numbers=[1,2,3,4,5];
 
-numbers.forEach(double);
-numbers.forEach(display);
+// numbers.forEach(double);
+// numbers.forEach(display);
 
-function display(element){
-    console.log(element);
+// function display(element){
+//     console.log(element);
+// }
+
+// function double(element,index,array){
+//     array[index]=element*2;
+// }
+
+
+let fruits=["orange","apple","banana","coconut"];
+
+
+fruits.forEach(upperCase);
+fruits.forEach(lowerCase);
+fruits.forEach(capitalize);
+fruits.forEach(display);
+
+function upperCase(element,index,array){
+    array[index]=element.toUpperCase();
 }
 
-function double(element,index,array){
-    array[index]=element*2;
+
+function lowerCase(element,index,array){
+    array[index]=element.toLowerCase();
+}
+
+function capitalize(element,index,array){
+    array[index]=element.charAt(0).toUpperCase()+element.slice(1);
+}
+function display(element){
+    console.log(element);
 }
