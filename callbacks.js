@@ -75,26 +75,43 @@
 // }
 
 
-let fruits=["orange","apple","banana","coconut"];
+// let fruits=["orange","apple","banana","coconut"];
 
 
-fruits.forEach(upperCase);
-fruits.forEach(lowerCase);
-fruits.forEach(capitalize);
-fruits.forEach(display);
+// fruits.forEach(upperCase);
+// fruits.forEach(lowerCase);
+// fruits.forEach(capitalize);
+// fruits.forEach(display);
 
-function upperCase(element,index,array){
-    array[index]=element.toUpperCase();
-}
+// function upperCase(element,index,array){
+//     array[index]=element.toUpperCase();
+// }
 
 
-function lowerCase(element,index,array){
-    array[index]=element.toLowerCase();
-}
+// function lowerCase(element,index,array){
+//     array[index]=element.toLowerCase();
+// }
 
-function capitalize(element,index,array){
-    array[index]=element.charAt(0).toUpperCase()+element.slice(1);
-}
-function display(element){
-    console.log(element);
+// function capitalize(element,index,array){
+//     array[index]=element.charAt(0).toUpperCase()+element.slice(1);
+// }
+// function display(element){
+//     console.log(element);
+// }
+
+
+
+
+///.map()= > accepts the callback and applies that 
+//          function to each element of an array, then return a new array
+
+const numbers=[1,2,3,4,5];
+
+const squares=numbers.map(square);
+
+console.log(squares);
+
+function square(element){
+    return Math.pow(element,2);
+
 }
