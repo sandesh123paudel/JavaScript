@@ -132,14 +132,26 @@
 // console.log(greeting);
 
 
-let day=1;
+// let day=1;
 
-switch(day){
-    case 1:
-        console.log("Sunday");
-        break;
-    case 2:
-        console.log("Monday");
-        break;
+// switch(day){
+//     case 1:
+//         console.log("Sunday");
+//         break;
+//     case 2:
+//         console.log("Monday");
+//         break;
         
-}
+// }
+
+
+
+
+let addition =(x,y)=>x+y;
+
+let a= window.prompt('Enter the value for x');
+a=Number(a);
+let b= window.prompt('Enter the value for y');
+b=Number(b);
+
+console.log(addition(a,b));
