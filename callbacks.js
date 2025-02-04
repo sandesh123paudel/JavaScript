@@ -105,13 +105,37 @@
 ///.map()= > accepts the callback and applies that 
 //          function to each element of an array, then return a new array
 
-const numbers=[1,2,3,4,5];
+// const numbers=[1,2,3,4,5];
 
-const squares=numbers.map(square);
+// const squares=numbers.map(square);
 
-console.log(squares);
+// console.log(squares);
 
-function square(element){
-    return Math.pow(element,2);
+// function square(element){
+//     return Math.pow(element,2);
+
+// }
+
+// const students=["Sandesh","Patrick","Squidard","Ram"]
+
+// const studentUpper=students.map(upperCase)
+// console.log(studentUpper);
+
+// function upperCase(element)
+// {
+//     return element.toUpperCase();
+// }
+
+
+const dates=["2024-1-20","2025-02-20","2026-03-16"];
+
+
+console.log(dates);
+const formattedDates=dates.map(formatDate);
+console.log(formattedDates);
+
+function formatDate(element){
+    const parts=element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
 
 }
