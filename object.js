@@ -91,8 +91,52 @@
 // )
 
 
-let username;
+// let username;
 
-username=window.prompt('Whats your name?');
+// username=window.prompt('Whats your name?');
 
-console.log(username);
+// console.log(username);
+
+
+
+
+
+///OBJECT :  A  collection of related properties and/or methods 
+//          can represent real wordl objects(people,products,places) 
+//           object={key:value, function()} 
+
+const person1={
+    firstName:"Sandesh",
+    lastName:"Paudel",
+    age:30,
+    isEmployed:true,
+    sayHello:function(){console.log("Hi, I am Sandesh")},
+    eat: function(){console.log("I am eating a Krabby Patty")}
+};
+
+const person2={
+    firstName:"Patrick",
+    lastName:"Star",
+    age:42,
+    isEmployed:false,
+    sayHello:()=>console.log("Hey, I am Patrick!"),
+    eat:()=>console.log("I am eating a Chicken Pizza")
+
+
+};
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.log(person1.isEmployed);
+
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// console.log(person2.isEmployed);
+
+person1.sayHello();
+person2.sayHello();
+
+person1.eat();
+person2.eat();
