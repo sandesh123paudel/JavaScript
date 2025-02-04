@@ -168,13 +168,50 @@
 // }
 
 
-const words=["Apple","Orange","Banana","Kiwi","Pomegranate","Coconot"];
+// const words=["Apple","Orange","Banana","Kiwi","Pomegranate","Coconot"];
 
-const shortWordsFruits=words.filter(shortWords);
-console.log(shortWordsFruits);
+// const shortWordsFruits=words.filter(shortWords);
+// console.log(shortWordsFruits);
 
-function shortWords(element){
-    return element.length >=6;
+// function shortWords(element){
+//     return element.length >=6;
+// }
+
+
+
+
+/// .reduce() :-> reduce the elemts of an array to a single value
+
+// const prices=[5,60,10,25,15,30];
+
+
+// const total=prices.reduce(sum);
+// console.log(total);
+
+
+// function sum(accumulator,element)
+
+// {
+//     return accumulator+element;
+
+// }
+
+
+const grades=[75,50,90,80,65,95];
+
+const maximum=grades.reduce(getMax);
+const minimum=grades.reduce(getMin);
+
+
+console.log(minimum);
+console.log(maximum);
+
+function getMax(accumulator,element)
+{
+    return Math.max(accumulator,element);
 }
 
-
+function getMin(accumulator,element)
+{
+    return Math.min(accumulator,element);
+}
