@@ -127,15 +127,54 @@
 // }
 
 
-const dates=["2024-1-20","2025-02-20","2026-03-16"];
+// const dates=["2024-1-20","2025-02-20","2026-03-16"];
 
 
-console.log(dates);
-const formattedDates=dates.map(formatDate);
-console.log(formattedDates);
+// console.log(dates);
+// const formattedDates=dates.map(formatDate);
+// console.log(formattedDates);
 
-function formatDate(element){
-    const parts=element.split("-");
-    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+// function formatDate(element){
+//     const parts=element.split("-");
+//     return `${parts[1]}/${parts[2]}/${parts[0]}`;
 
+// }
+
+
+
+///FILTER METHOD
+
+
+//.filer() :-> creates a new array by filtering out the elements
+
+// let numbers=[1,2,3,4,5];
+
+// const evenNums=numbers.filter(isEven);
+// console.log(evenNums);
+
+// function isEven(element)
+// {
+//     return element%2===0?true:false;
+// }
+
+
+// let ages=[16,17,18,19,20];
+
+// const adultAge=ages.filter(isAdult);
+// console.log(adultAge);
+
+// function isAdult(element){
+//     return element >=18?true:false;
+// }
+
+
+const words=["Apple","Orange","Banana","Kiwi","Pomegranate","Coconot"];
+
+const shortWordsFruits=words.filter(shortWords);
+console.log(shortWordsFruits);
+
+function shortWords(element){
+    return element.length >=6;
 }
+
+
