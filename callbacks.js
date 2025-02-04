@@ -197,21 +197,22 @@
 // }
 
 
-const grades=[75,50,90,80,65,95];
+// const grades=[75,50,90,80,65,95];
 
-const maximum=grades.reduce(getMax);
-const minimum=grades.reduce(getMin);
+// const maximum=grades.reduce(getMax);
+// const minimum=grades.reduce(getMin);
 
 
-console.log(minimum);
-console.log(maximum);
+// console.log(minimum);
+// console.log(maximum);
 
-function getMax(accumulator,element)
-{
-    return Math.max(accumulator,element);
-}
+// function getMax(accumulator,element)
+// {
+//     return Math.max(accumulator,element);
+// }
 
-function getMin(accumulator,element)
-{
-    return Math.min(accumulator,element);
-}
+// function getMin(accumulator,element)
+// {
+//     return Math.min(accumulator,element);
+// }
+
