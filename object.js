@@ -152,3 +152,37 @@ const person1={
 }
 
 person1.sayHello();
+
+const person1={
+    name:"Sandesh",
+    favFood:"hamburgers",
+    sayHello:function(){console.log(`Hi I am ${this.name}`)}
+}
+
+person1.sayHello();
+
+
+const person1={
+    name:"Sandesh",
+    favFood:"hamburgers",
+    sayHello:function(){console.log(`Hi I am ${this.name}`)}
+}
+
+person1.sayHello();
+
+const person1={
+    name:"Sandesh",
+    favFood:"hamburgers",
+    sayHello:function(){console.log(`Hi I am ${this.name}`)}
+}
+
+person1.sayHello();
+
+
+const person1={
+    name:"Sandesh",
+    favFood:"hamburgers",
+    sayHello:function(){console.log(`Hi I am ${this.name}`)}
+}
+
+person1.sayHello();
