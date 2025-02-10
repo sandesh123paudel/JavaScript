@@ -60,87 +60,69 @@
 
 // //Example 2
 
-class Person{
-    constructor(firstName,lastName,age){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
-    }
+// class Person{
+//     constructor(firstName,lastName,age){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+//         this.age=age;
+//     }
 
 
-    set firstName(newFirstName){
-        if(typeof newFirstName==="string" && newFirstName.length>0)
-        {
-            this._firstName=newFirstName;
-        }
-        else{
-            console.error("First Name must be a non empty string");
-        }
-    }
+//     set firstName(newFirstName){
+//         if(typeof newFirstName==="string" && newFirstName.length>0)
+//         {
+//             this._firstName=newFirstName;
+//         }
+//         else{
+//             console.error("First Name must be a non empty string");
+//         }
+//     }
 
-    get firstName(){
-        return this._firstName;
-    }
+//     get firstName(){
+//         return this._firstName;
+//     }
 
-    set lastName(newLastName){
-        if(typeof newLastName==="string" && newLastName.length>0)
-        {
-            this._lastName=newLastName;
-        }
-        else{
-            console.error("Last Name must be an non empty string");
-        }
-    }
+//     set lastName(newLastName){
+//         if(typeof newLastName==="string" && newLastName.length>0)
+//         {
+//             this._lastName=newLastName;
+//         }
+//         else{
+//             console.error("Last Name must be an non empty string");
+//         }
+//     }
 
-    get lastName(){
-        return this._lastName;
-    }
-
-
-    get fullName(){
-        return this._firstName + " " + this._lastName;
-    }
-
-    set age(newAge){
-        if(typeof newAge === "number" && newAge >0){
-            this._age=newAge;
-        }
-        else{
-            console.error("Age must be a non-negative number");
-        }
-    }
-
-    get age(){
-        return this._age;
-    }
+//     get lastName(){
+//         return this._lastName;
+//     }
 
 
+//     get fullName(){
+//         return this._firstName + " " + this._lastName;
+//     }
 
+//     set age(newAge){
+//         if(typeof newAge === "number" && newAge >0){
+//             this._age=newAge;
+//         }
+//         else{
+//             console.error("Age must be a non-negative number");
+//         }
+//     }
 
-}
-
-
-const person1=new Person("Sandesh","Paudel",20);
-
-
-console.log(person1.fullName);
+//     get age(){
+//         return this._age;
+//     }
 
 
 
-const person1=new Person("Sandesh","Paudel",20);
+
+// }
 
 
-console.log(person1.fullName);
+// const person1=new Person("Sandesh","Paudel",20);
+// console.log(person1.fullName);
 
 
-const person1=new Person("Sandesh","Paudel",20);
 
-
-console.log(person1.fullName);
-
-
-const person1=new Person("Sandesh","Paudel",20);
-
-
-console.log(person1.fullName);
 
