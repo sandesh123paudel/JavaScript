@@ -170,30 +170,59 @@
 
 ///Constructors: special method for defining the properties and methods of objects
 
-function Car(make,model,year,color){
-    this.make=make,
-    this.model=model,
-    this.year=year,
-    this.color=color,
-    this.drive=function(){console.log(`You drive the ${this.model}`)}
+// function Car(make,model,year,color){
+//     this.make=make,
+//     this.model=model,
+//     this.year=year,
+//     this.color=color,
+//     this.drive=function(){console.log(`You drive the ${this.model}`)}
+// }
+
+// const car1=new Car("Ford","Mustang","2024","Red");
+// const car2=new Car("Chevrolet","Camaro","2025","Blue")
+
+
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+
+// console.log(car2.make);
+// console.log(car2.model);
+// console.log(car2.year);
+// console.log(car2.color);
+
+// car1.drive();
+// car2.drive();
+
+
+
+
+
+//nested objects => objects inside of our objects
+//                  allows you to represent more complex data strucutres
+//                  Child Object is enclosed by a parent object
+
+//                  Person{Address{},ContactInfo{}}
+//                  ShoppingCart{Keyword{}, Mouse{}, Monitor{}}
+
+const person={
+    fullName: "Sandesh Paudel",
+    age:30,
+    isStudent:true,
+    hobbies:["karate","jellyfishing","cooking"],
+    address:{
+        street: "124 Conch St.",
+        city: "Bikini",
+        country:"Int. Water"
+    }
 }
 
-const car1=new Car("Ford","Mustang","2024","Red");
-const car2=new Car("Chevrolet","Camaro","2025","Blue")
-
-
-console.log(car1.make);
-console.log(car1.model);
-console.log(car1.year);
-console.log(car1.color);
-
-console.log(car2.make);
-console.log(car2.model);
-console.log(car2.year);
-console.log(car2.color);
-
-car1.drive();
-car2.drive();
+console.log(person.fullName);
+console.log(person.age);
+console.log(person.isStudent);
+console.log(person.hobbies);
+console.log(person.address);
 
 
 
