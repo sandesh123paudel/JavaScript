@@ -206,23 +206,47 @@
 //                  Person{Address{},ContactInfo{}}
 //                  ShoppingCart{Keyword{}, Mouse{}, Monitor{}}
 
-const person={
-    fullName: "Sandesh Paudel",
-    age:30,
-    isStudent:true,
-    hobbies:["karate","jellyfishing","cooking"],
-    address:{
-        street: "124 Conch St.",
-        city: "Bikini",
-        country:"Int. Water"
+// const person={
+//     fullName: "Sandesh Paudel",
+//     age:30,
+//     isStudent:true,
+//     hobbies:["karate","jellyfishing","cooking"],
+//     address:{
+//         street: "124 Conch St.",
+//         city: "Bikini",
+//         country:"Int. Water"
+//     }
+// }
+
+// console.log(person.fullName);
+// console.log(person.age);
+// console.log(person.isStudent);
+// console.log(person.hobbies[2]);
+// console.log(person.address.country);
+
+// for(const property in person.address){
+//     console.log(person.address[property])
+// }
+
+
+class Person{
+    constructor(name,age,...address){
+        this.name=name;
+        this.age=age;
+        this.address=new Address(...address);
     }
 }
 
-console.log(person.fullName);
-console.log(person.age);
-console.log(person.isStudent);
-console.log(person.hobbies);
-console.log(person.address);
 
+class Address{
 
+    constructor(street, city,country){
+        this.street=street;
+        this.city=city;
+        this.country=country;
+    }
+}
 
+const person1=new Person("Sandesh Paudel",30,"Raninbari Kathmandu","Kathmandu","Nepal");
+
+console.log(person1.name);
