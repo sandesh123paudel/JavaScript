@@ -250,3 +250,7 @@ class Address{
 const person1=new Person("Sandesh Paudel",30,"Raninbari Kathmandu","Kathmandu","Nepal");
 
 console.log(person1.name);
+console.log(person1.address.city);
+console.log(person1.age);
+console.log(person1.address.street);
+
