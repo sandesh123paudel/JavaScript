@@ -120,9 +120,11 @@
 // }
 
 
-// const person1=new Person("Sandesh","Paudel",20);
-// console.log(person1.fullName);
+const person1=new Person("Sandesh","Paudel",20);
+console.log(person1.fullName);
 
 
 
+const person2=new Person("Ram","Acharya",24);
+console.log(person1.fullName);
 

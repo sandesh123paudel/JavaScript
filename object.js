@@ -254,3 +254,6 @@ console.log(person1.address.city);
 console.log(person1.age);
 console.log(person1.address.street);
 
+
+
+

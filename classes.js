@@ -248,6 +248,8 @@ const hawk=new Hawk("hawk",3,50);
 
 
 rabbit.run();
+rabbit.age();
+rabbit.move();
 
 
 
