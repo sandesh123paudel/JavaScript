@@ -237,5 +237,6 @@ const person2={
 }
 
 displayPerson(person1);
+displayPerson(person2);
 
 

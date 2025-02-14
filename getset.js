@@ -128,3 +128,11 @@ console.log(person1.fullName);
 const person2=new Person("Ram","Acharya",24);
 console.log(person1.fullName);
 
+const person3=new Person("Sandesh","Paudel",20);
+console.log(person3.fullName);
+
+
+const person4=new Person("Ram","Acharya",24);
+console.log(person4.fullName);
+
+

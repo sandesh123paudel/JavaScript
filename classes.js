@@ -249,7 +249,18 @@ const hawk=new Hawk("hawk",3,50);
 
 rabbit.run();
 rabbit.age();
-rabbit.move();
+rabbit.runSpeed();
+
+
+
+fish.swim();
+fish.age();
+fish.swimSpeed();
+
+hawk.fly();
+hawk.age();
+hawk.flySpeed();
+
 
 
 
