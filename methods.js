@@ -21,3 +21,4 @@ console.log(username);
 username=username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 
 console.log(username);
+// The above code is an example of method chaining. We are calling the methods one after another in one continuous line of code.

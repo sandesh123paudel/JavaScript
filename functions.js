@@ -110,3 +110,36 @@ console.log(cubes);
 
 const evenNums=numbers.filter((element)=>element%2===0);
 console.log(evenNums);
+
+
+// const add=(x,y)=>x+y;
+
+// console.log(add(3,2));
+
+
+
+// const isValidEmail=(email)=>email.includes("@") ? true: false;
+
+// console.log(isValidEmail("sandeshgmail.com"));
+
+
+// const happyBirthday=(username,age)=>console.log(`Happy Birthday to you ${username} for your ${age} years!!`);
+
+// happyBirthday("Sandesh",22);
+// happyBirthday("Ram",30);
+
+
+// const numbers=[1,2,3,4,5,6];
+// const squares=numbers.map((element)=>Math.pow(element,2));
+// console.log(squares);
+
+// const evenNums=numbers.filter((element)=>element%2===0);
+// console.log(evenNums);
+
+
+// const add=(x,y)=>x+y;
+// console.log(add(3,2));
+
+
+// const isValidEmail=(email)=>email.includes("@") ? true: false;
+// console.log(isValidEmail("sandeshgmail.com"));

@@ -136,3 +136,38 @@ const person4=new Person("Ram","Acharya",24);
 console.log(person4.fullName);
 
 
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.log(person1.fullName);
+
+
+
+
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// console.log(person2.fullName);
+
+
+
+// console.log(person3.firstName);
+// console.log(person3.lastName);
+// console.log(person3.age);
+// console.log(person3.fullName);
+
+
+// console.log(person4.firstName);
+// console.log(person4.lastName);
+// console.log(person4.age);
+// console.log(person4.fullName);
+
+
+
+
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+// console.log(person4);
+
