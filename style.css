@@ -25,3 +25,31 @@
 .buttons:hover{
     background-color: blue;
 }
+
+
+body{
+    margin: 0;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b43f994-9aa9-440b-b5ba-215847ef12d0/d2j98ao-ddb75044-e751-4626-bb6a-278568177ae4.jpg/v1/fill/w_1095,h_730,q_70,strp/simple_background___blue_by_kawaiifaerie_d2j98ao-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUzIiwicGF0aCI6IlwvZlwvNWI0M2Y5OTQtOWFhOS00NDBiLWI1YmEtMjE1ODQ3ZWYxMmQwXC9kMmo5OGFvLWRkYjc1MDQ0LWU3NTEtNDYyNi1iYjZhLTI3ODU2ODE3N2FlNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.e4BJVmQqmcNoUN2EG_4BWnbbm_14k_-zY8L3tMF0RkY);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+    backdrop-filter: blur(50px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: 100%;
+}
