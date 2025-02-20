@@ -36,6 +36,20 @@ function function2(){
 
 function1(function2);
 
+function function3() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Task 6");
+            resolve();
+        }, 2000);
+    });
+}
 
+async function executeTasks() {
+    await function3();
+    console.log("Task 7");
+}
+
+executeTasks();
 
 
