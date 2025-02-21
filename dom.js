@@ -1,36 +1,51 @@
+/**
+ * DOM Manipulation Example
+ * 
+ * This script demonstrates various common operations on the Document Object Model (DOM) using JavaScript.
+ * 
+ * 1. Selecting elements:
+ *    - `document.getElementById('title')`: Selects an element by its ID.
+ *    - `document.getElementsByClassName('paragraph')`: Selects elements by their class name.
+ *    - `document.querySelector('#myButton')`: Selects the first element that matches the CSS selector.
+ *    - `document.querySelectorAll('li')`: Selects all elements that match the CSS selector.
+ * 
+ * 2. Changing content:
+ *    - `element.textContent`: Sets or gets the text content of an element.
+ *    - `element.innerHTML`: Sets or gets the HTML content of an element.
+ * 
+ * 3. Modifying styles:
+ *    - `element.style.property`: Sets the style property of an element.
+ * 
+ * 4. Creating new elements:
+ *    - `document.createElement('tagName')`: Creates a new element with the specified tag name.
+ *    - `parentElement.appendChild(newElement)`: Appends a new child element to the parent element.
+ * 
+ * 5. Event handling:
+ *    - `element.addEventListener('event', callback)`: Adds an event listener to an element.
+ * 
+ * 6. Modifying attributes:
+ *    - `element.setAttribute('attribute', 'value')`: Sets the value of an attribute on an element.
+ *    - `element.classList.add('className')`: Adds a class to the element's class list.
+ * 
+ * 7. Removing elements:
+ *    - `element.remove()`: Removes the element from the DOM.
+ */
 //DOM - DOCUMENT OBJECT MODEL
 
-// 1. Selecting elements
-const heading = document.getElementById('title');
-const paragraphs = document.getElementsByClassName('paragraph');
-const button = document.querySelector('#myButton');
-const listItems = document.querySelectorAll('li');
 
-// 2. Changing content
-heading.textContent = 'New Title';
-heading.innerHTML = '<span>New Title with HTML</span>';
 
-// 3. Modifying styles
-button.style.backgroundColor = 'blue';
-button.style.color = 'white';
+// console.log(document);
 
-// 4. Creating new elements
-const newDiv = document.createElement('div');
-newDiv.textContent = 'I am a new div';
-document.body.appendChild(newDiv);
 
-// 5. Event handling
-button.addEventListener('click', () => {
-    alert('Button clicked!');
-});
 
-// 6. Modifying attributes
-const link = document.querySelector('a');
-link.setAttribute('href', 'https://example.com');
-link.classList.add('active');
+// document.title="DOM";
+// document.body.style.backgroundColor="hsl(0,0%,15%)";
+// console.dir(document);
 
-// 7. Removing elements
-const elementToRemove = document.querySelector('.unwanted');
-if (elementToRemove) {
-    elementToRemove.remove();
-}
+const username="";
+
+const welcomMsg=document.getElementById("welcome-msg");
+
+welcomMsg.textContent += username === "" ? " Guest" :username;
+
+
