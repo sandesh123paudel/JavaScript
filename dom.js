@@ -42,10 +42,46 @@
 // document.body.style.backgroundColor="hsl(0,0%,15%)";
 // console.dir(document);
 
-const username="";
+// const username="";
 
-const welcomMsg=document.getElementById("welcome-msg");
+// const welcomMsg=document.getElementById("welcome-msg");
 
-welcomMsg.textContent += username === "" ? " Guest" :username;
+// welcomMsg.textContent += username === "" ? " Guest" :username;
 
 
+
+
+// element selectors=  Methods used to target and manipulate HTML elements 
+//                      They allow you to select one or multiple HTML elements 
+//                      from the DOM(DOcument Object Model)
+
+
+//1. document.getElementbyId()          //ELEMENT OR NULL
+//2. document.getElementsClassName()    //HTML COLLECTION
+//3. document.getElementByTagName()     //HTML COLLECTION
+//4. document.querySelector()           //ELEMENT OR NULL
+//5. document.querySelectorAll()        //NODELIST
+
+// 1. Selecting elements:
+const title = document.getElementById('title'); // ELEMENT OR NULL
+const paragraphs = document.getElementsByClassName('paragraph'); // HTML COLLECTION
+const myButton = document.querySelector('#myButton'); // ELEMENT OR NULL
+const listItems = document.querySelectorAll('li'); // NODELIST
+
+// 2. Changing content:
+title.textContent = 'New Title';
+paragraphs[0].innerHTML = '<strong>Updated paragraph content</strong>';
+
+// 3. Modifying styles:
+title.style.color = 'blue';
+myButton.style.backgroundColor = 'green';
+
+// 4. Creating new elements:
+const newDiv = document.createElement('div');
+newDiv.textContent = 'This is a new div';
+document.body.appendChild(newDiv);
+
+// 5. Event handling:
+myButton.addEventListener('click', function() {
+    alert('Button was clicked!');
+});
