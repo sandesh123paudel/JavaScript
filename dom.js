@@ -62,26 +62,66 @@
 //4. document.querySelector()           //ELEMENT OR NULL
 //5. document.querySelectorAll()        //NODELIST
 
-// 1. Selecting elements:
-const title = document.getElementById('title'); // ELEMENT OR NULL
-const paragraphs = document.getElementsByClassName('paragraph'); // HTML COLLECTION
-const myButton = document.querySelector('#myButton'); // ELEMENT OR NULL
-const listItems = document.querySelectorAll('li'); // NODELIST
 
-// 2. Changing content:
-title.textContent = 'New Title';
-paragraphs[0].innerHTML = '<strong>Updated paragraph content</strong>';
+// const myHeading= document.getElementById("my-heading");
+// myHeading.style.backgroundColor="black";
 
-// 3. Modifying styles:
-title.style.color = 'blue';
-myButton.style.backgroundColor = 'green';
 
-// 4. Creating new elements:
-const newDiv = document.createElement('div');
-newDiv.textContent = 'This is a new div';
-document.body.appendChild(newDiv);
+// const fruits=document.getElementsByClassName("fruits");
 
-// 5. Event handling:
-myButton.addEventListener('click', function() {
-    alert('Button was clicked!');
-});
+// fruits[2].style.backgroundColor="yellow";
+// console.log(fruits);
+
+
+
+
+
+
+
+
+
+//// DOM Navigation
+
+//DOM Navigation: The process of navigating through the structure of an HTML document using JS
+
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementsSibling
+// .previousElementsSibling
+// .parentElement
+// .children
+
+
+
+
+//----------------------.firstElementChild------------------
+
+// const element=document.getElementById("fruits");
+
+// const firstChild=element.firstElementChild;
+// firstChild.style.backgroundColor="yellow";
+
+
+//for all list
+
+// const ulElements=document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement=>{
+//         const firstChild=ulElement.firstElementChild;
+//         firstChild.style.backgroundColor="yellow";
+// });
+
+
+
+
+//----------------------.lastElementChild------------------
+
+
+const element=document.getElementById("fruits");
+const lastChild=element.lastElementChild;
+lastChild.style.backgroundColor="bluw";
+
+
+//for all list
+
