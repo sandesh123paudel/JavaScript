@@ -118,10 +118,57 @@
 //----------------------.lastElementChild------------------
 
 
-const element=document.getElementById("fruits");
-const lastChild=element.lastElementChild;
-lastChild.style.backgroundColor="bluw";
+// const element=document.getElementById("fruits");
+// const lastChild=element.lastElementChild;
+// lastChild.style.backgroundColor="bluw";
 
 
 //for all list
 
+
+// const ulElements=document.querySelectorAll("ul");
+// ulElements.forEach(ulElement=>{
+//     const lastChild=ulElement.lastElementChild;
+//     lastChild.style.backgroundColor="red";
+
+// });
+
+
+//----------------------.nextElementSibling-----------------
+
+
+// const element=document.getElementById("cake");
+// const nextSibling=element.nextElementSibling;
+// nextSibling.style.backgroundColor="yellow";
+
+
+//----------------------.previousElementSibling-----------------
+
+
+// const element=document.getElementById("raddish");
+// const previousSibling=element.previousElementSibling;
+// previousSibling.style.backgroundColor="yellow";
+
+
+//----------------------.parentElement-----------------
+
+
+// const element=document.getElementById("apple");
+// const parent=element.parentElement;
+// parent.style.backgroundColor="yellow";
+
+
+//----------------------.childrenElement-----------------
+
+
+const element=document.getElementById("fruits");
+const children=element.children;
+
+//for individual 
+children[1].style.backgroundColor="red";
+
+
+//for  all child
+// Array.from(children).forEach(child=>{
+//     child.style.backgroundColor="";
+// })
