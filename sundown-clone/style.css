@@ -240,3 +240,25 @@ nav{
         transform: translate(-100%);
     }
 }
+
+
+#page2-buttom{
+    height: 60vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    padding: 4vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-buttom h1{
+    font-size: 3.5vw;
+    width: 50%;
+}
+
+#bottom-part2{
+    width: 25%;
+    background-color: aqua;
+    
+}
