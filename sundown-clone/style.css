@@ -292,15 +292,15 @@ nav{
 }
 
 #page2 #gooey{
-    height: 25vw;
-    width: 25vw;
+    height: 32vw;
+    width: 32vw;
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(to top right ,#ff2d03,#ff5c0b);
 
     top: 58%;
     left: 25%;
-    filter: blur(10px);
+    filter: blur(20px);
     animation-name: gooey;
     animation-duration:6s ;
     animation-iteration-count: infinite;
@@ -311,10 +311,15 @@ nav{
 }
 
 @keyframes gooey{
+    
     from{
+    filter: blur(20px);
+
         transform: translate(10%,-10%) skew(0);
     }
     to{
+    filter: blur(30px);
+
         transform: translate(-10%,-10%) skew(-12deg);
     }
 }
@@ -323,4 +328,14 @@ nav{
 #page3{
     height: 100vh;
     width: 100vh;
+    background-color: white;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    background-color:red;
+
+
 }
