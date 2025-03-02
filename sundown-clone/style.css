@@ -326,17 +326,45 @@ nav{
 
 
 #page3{
-    height: 100vh;
-    width: 100vh;
-    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EEEAE3;
+    padding: 4vw 0;
 }
 
 .elem{
     height: 150px;
     width: 100%;
     position: relative;
-    background-color:red;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding:0 2vw ;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FFA500;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
 
 
 }
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+
 
