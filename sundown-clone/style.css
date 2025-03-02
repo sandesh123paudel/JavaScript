@@ -336,8 +336,8 @@ nav{
     height: 150px;
     width: 100%;
     position: relative;
-    border-top:1px solid black;
-    border-bottom:1px solid black;
+    /* border-top:1px solid black; */
+    border-bottom:1px solid rgba(29, 27, 27, 0.398);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -366,5 +366,22 @@ nav{
     top: 0;
 }
 
+#elem-container{
+    /* background-color: red; */
+}
+
+
+#fixed-image{
+    height: 30vw;
+    width: 23vw;
+    background-color: red;
+    border-radius:20px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+
+}
 
 
