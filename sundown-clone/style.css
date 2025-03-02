@@ -258,7 +258,6 @@ nav{
 #page2-buttom{
     height: 60vh;
     width: 100%;
-    
     display: flex;
     padding: 4.5vw;
     align-items: center;
@@ -286,7 +285,7 @@ nav{
 
 #buttom-part2 p{
     font-weight: 200;
-    margin-top: 2vw;
+    /* margin-top: 10vw; */
     font-size: 1vw;
 
 }
@@ -325,11 +324,32 @@ nav{
 }
 
 
+
 #page3{
     min-height: 100vh;
     width: 100%;
     background-color: #EEEAE3;
     padding: 4vw 0;
+}
+
+#feature{
+    display: flex; 
+    padding:0 2vw ;   
+    gap: 10px;
+    align-items: center;
+
+}
+#feature .container{
+    background-color: #FE320A;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    align-items: center;
+}
+#feature p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.831);
+   
 }
 
 .elem{
@@ -374,13 +394,15 @@ nav{
 #fixed-image{
     height: 30vw;
     width: 23vw;
-    background-color: red;
-    border-radius:20px;
+    background-color: none;
+    border-radius:15px;
     position: fixed;
     z-index: 99;
     left: 50%;
     top: 25%;
     display: none;
+    background-size:cover ;
+    
 
 }
 
